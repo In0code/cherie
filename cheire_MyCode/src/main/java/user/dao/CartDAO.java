@@ -1,6 +1,6 @@
 package user.dao;
 
-//사용자 / 장바구니 DAO - 인영
+//사용자 / 장바구니 DAO -  인영
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
