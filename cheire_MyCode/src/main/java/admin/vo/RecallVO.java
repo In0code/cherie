@@ -1,5 +1,5 @@
 package admin.vo;
-
+//관리자 / 교환반품 VO - 인영
 public class RecallVO {
 
 	private String name, ord_date, recall_date ,gname ,dlvy_pro, ordno ,ord_dno;
