@@ -2,7 +2,8 @@
 
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/85844bde-a858-4556-ba58-861fd0e5a891)
+![Uploading image.png…]()
+
 
 
 
