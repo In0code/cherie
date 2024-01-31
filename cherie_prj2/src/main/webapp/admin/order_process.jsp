@@ -9,7 +9,7 @@
     pageEncoding="UTF-8"%>
 <%@ page info="" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
+<!-- 관리자 / 주문관리 / process - 인영 -->
 <%
 BufferedReader reader = request.getReader();
 StringBuilder jsonInput = new StringBuilder();

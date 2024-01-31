@@ -11,64 +11,77 @@
 <%@page import="admin.vo.BoardRangeVO"%>
 <%@page import="common.dao.BoardDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
-    <%@ page info="사용자 / 장바구니 / 메인 페이지 - 인영" %>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
-      <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
-       <c:if test="${ empty sesId }">
-    <c:redirect url="member/login.jsp"/>
-    </c:if> 
-<jsp:include page="../cdn/cdn.jsp"/>
+	pageEncoding="UTF-8" trimDirectiveWhitespaces="true"%>
+<%@ page info="사용자 / 장바구니 / 메인 페이지 - 인영"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<c:if test="${ empty sesId }">
+	<c:redirect url="member/login.jsp" />
+</c:if>
+<jsp:include page="../cdn/cdn.jsp" />
+<!-- 사용자 / 장바구니 / 메인 페이지 - 인영 -->
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<link rel="stylesheet" type="text/css" href="https://afterblow-scent.com/ind-script/optimizer.php?filename=nc1LCoAwDIThfXHrOYLeqC3xAU2mpCno7RW8gHQ7zMdPB4RpWY2qYbcoZNzQLTPl1mgzqFOGCHR6h5n-_DmHhtL9hIaEaxB299FoiTfbGPWYCg9S1FBO5ZCi6td_AA&type=css&k=37c9481ac0212340e132f81eba4d1049fee7f18e&t=1681776733" />
-<link rel="stylesheet" type="text/css" href="http://localhost/prj_web_shopping/user/member/mypage.css" />
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet" />
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&amp;display=swap" rel="stylesheet" />
+<link rel="stylesheet" type="text/css"
+	href="https://afterblow-scent.com/ind-script/optimizer.php?filename=nc1LCoAwDIThfXHrOYLeqC3xAU2mpCno7RW8gHQ7zMdPB4RpWY2qYbcoZNzQLTPl1mgzqFOGCHR6h5n-_DmHhtL9hIaEaxB299FoiTfbGPWYCg9S1FBO5ZCi6td_AA&type=css&k=37c9481ac0212340e132f81eba4d1049fee7f18e&t=1681776733" />
+<link rel="stylesheet" type="text/css"
+	href="http://localhost/prj_web_shopping/user/member/mypage.css" />
+<link
+	href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&amp;display=swap"
+	rel="stylesheet" />
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+	rel="stylesheet" />
+<link
+	href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&amp;display=swap"
+	rel="stylesheet" />
 <style type="text/css">
-
 #pageTitle {
 	font-size: 25px;
 	text-align: center;
 	margin-top: 100px;
 }
-.table-container{
-position: relative;
-}
-#move{
-position: absolute;
 
+.table-container {
+	position: relative;
 }
-#btnBlack{
-font-size: 14px;
-text-align: center;
-background-color:  #141414;
-color:  #FFFFFF;
-height: 56px; width: 500px;
-padding: 16px 16px 16px 16px;
+
+#move {
+	position: absolute;
 }
-#btnSubmit{
-font-size: 14px;
-text-align: center;
-background-color:  #FFFFFF;
-height: 56px; width: 500px;
-padding: 16px 16px 16px 16px;
+
+#btnBlack {
+	font-size: 14px;
+	text-align: center;
+	background-color: #141414;
+	color: #FFFFFF;
+	height: 56px;
+	width: 500px;
+	padding: 16px 16px 16px 16px;
 }
+
+#btnSubmit {
+	font-size: 14px;
+	text-align: center;
+	background-color: #FFFFFF;
+	height: 56px;
+	width: 500px;
+	padding: 16px 16px 16px 16px;
+}
+
 .table {
-    background-color: white;
+	background-color: white;
 }
 
 .table thead {
-    background-color: white; 
+	background-color: white;
 }
 
 .table tbody td {
-    background-color: white; 
+	background-color: white;
 }
-
 </style>
 
 <script type="text/javascript">
@@ -207,10 +220,10 @@ $(function() {
 	}//minus
 </script>
 
-</head>  
+</head>
 <body>
-<%@ include file="layout/header.jsp"%>
-<%
+	<%@ include file="layout/header.jsp"%>
+	<%
 BoardDAO bDAO=BoardDAO.getInstance();
 BoardRangeVO brVO=new BoardRangeVO();
 
@@ -252,105 +265,126 @@ pageContext.setAttribute("deliveryPrice", deliveryPrice);
 	se.printStackTrace();
 }//end catch
 %>
-<div id="container" style="font-family:Pretendard Medium;">
+	<div id="container" style="font-family: Pretendard Medium;">
 
-	<div id="contents">
-	<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
+		<div id="contents">
+			<script
+				src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.5.1.min.js"></script>
 
-		<div class="PageTop" style="margin-top: 100px">
-			<ul>
-				<li class="xans-element- xans-layout xans-layout-statelogon left ">
-					<span class="xans-member-var-name"></span>
-					<c:choose>
-					<c:when test="${ empty sesId }">
-					<a href="login.jsp"></a>
-					</c:when>
-					<c:otherwise>
-					<%
+			<div class="PageTop" style="margin-top: 100px">
+				<ul>
+					<li class="xans-element- xans-layout xans-layout-statelogon left ">
+						<span class="xans-member-var-name"></span> <c:choose>
+							<c:when test="${ empty sesId }">
+								<a href="login.jsp"></a>
+							</c:when>
+							<c:otherwise>
+								<%
 					UserVO uVO=(UserVO)session.getAttribute("userData");
 					//DataDecrypt dd=new DataDecrypt("a12345678901234567");
 					//String name=dd.decryption(uVO.getName());
 					String name=uVO.getName();
 					pageContext.setAttribute("name", name);
 					%>
-					<big><b><c:out value="${ name }"/></b></big><big>님</big>
-					</c:otherwise>
-					</c:choose>
-				</li>
-				<li class="right"><a href="member/mypage.jsp" >마이페이지</a>
-					<span> </span> <a href="order_table.jsp">주문내역조회</a> <span>
-				</span> <a href="cart.jsp" class="select" style="font-size: 14px;height: 22px">장바구니</a></li>
-			</ul>
-		</div>
-		<div class="table-container" >
-			 <div id="totalProducts" style="border: 1px solid #E5E4E4; ">
-			 <form id="buyFrm" name="buyFrm" method="get" action="buy.jsp">
-			<table class="table" id="table" style="background-color: #FFFFFF; text-align: center;">
-				<tr style="border: 1px solid #E5E4E4; border-bottom: 1px solid #919191;">
-					<td  style="width:30px; color: #929492">
-						<input type="hidden" style="width: 45px;"/>
-					</td>
-					<td style="width:100px; color : #929492; vertical-align: middle;">이미지</td>
-					<td style="width:350px;color: #929492;vertical-align: middle; ">상품정보</td>
-					<td style="width:250px;color: #929492; vertical-align: middle;">판매가</td>
-					<td style="width:100px;color: #929492; vertical-align: middle;">수량</td>
-					<td style="width:100px ;color: #929492;vertical-align: middle;">합계</td>
-					<td style="width:40px; color: #929492;vertical-align: middle;"> 선택</td>
-				</tr>
-				<c:if test="${ empty cartList }">
-					<tr>
-					<td colspan="7">
-						<img src="http://localhost/prj_web_shopping/common/images/nocart.png"/>
-					</td>
-					
-					</tr>
-				</c:if>
-				
-						
-					<c:forEach var="cart" items="${ cartList }" varStatus="i">
-					  <tr style="border-top: 1px solid #E5E4E4;" >
-						<td style=" vertical-align: middle;"><input type="checkbox" class="check" name="check"  value="${ cart.bcode }" style="border: 1px solid #929492 ; width: 15px; pa "></td> 
-						<td  style=" vertical-align: middle;"><img src="../upload/goods/${ cart.img }"  style="width: 100px"/></td>
-						<td style=" vertical-align: middle;"><a href="product_detail.jsp?gcode=${ cart.gcode }"><c:out value="${ cart.gname }"/></a></td>
-						<td style=" vertical-align: middle;"><fmt:formatNumber value="${ cart.price }" pattern="#,###,###"/></td>
-						 <td style="width:20px">
-                          <!--  수량 -->
-                           <span id="amountSet"  class="quantity">
-                          <input type="text" id="quantity${ cart.bcode }" name="quantity_opt[]" value="${ cart.amount }" type="text" readonly="readonly"/>
-							 <!--   + 버튼 -->
-							<a href="#void" onclick="plus('${ cart.bcode }', ${ cart.price })" class="up QuantityUp">수량증가</a>
-							<!--   - 버튼 -->
-							<a href="#void" onclick="minus('${ cart.bcode }', ${ cart.price })" class="down QuantityDown">수량감소</a>
-							</span>
-                        </td> 
-                        <!-- 총 가격 -->
-					 	<td style=" vertical-align: middle;" id="total${ cart.bcode }">
-					 	<fmt:formatNumber value="${cart.price * cart.amount}" pattern='#,###,###'/>
-					 	</td> 
-						<td> 
-							<!-- 삭제 버튼 -->
-					 		<input type="button" value="x삭제" class="deleteBtn" name="deleteBtn" onclick="deleteCart('${cart.bcode}')" style="width:90px; height:35px ;background-color: white; border : 1px solid  #E5E4E4;"/><br/>
-					 		<input type="hidden"  style="width:90px; height:30px ;"/>
-					 	</td>
-					 </tr>
-					</c:forEach>
-				</table>
-				<input type="hidden" name="where" value="cart">
-				<input type="hidden" id="full" name="full" value="">
-				</form>
-					</div>
-				
-		</div>
-		<div class="move">
-		
-				<div class="xans-element- xans-order xans-order-totalorder ec-base-button 100per">
-					<a class="btnBlack" id="btnBlack">전체상품주문</a>
-		     		<a class="btnSubmit" id="btnSubmit">선택상품주문</a> 
+								<big><b><c:out value="${ name }" /></b></big>
+								<big>님</big>
+							</c:otherwise>
+						</c:choose>
+					</li>
+					<li class="right"><a href="member/mypage.jsp">마이페이지</a> <span>
+					</span> <a href="order_table.jsp">주문내역조회</a> <span> </span> <a
+						href="cart.jsp" class="select"
+						style="font-size: 14px; height: 22px">장바구니</a></li>
+				</ul>
+			</div>
+			<div class="table-container">
+				<div id="totalProducts" style="border: 1px solid #E5E4E4;">
+					<form id="buyFrm" name="buyFrm" method="get" action="buy.jsp">
+						<table class="table" id="table"
+							style="background-color: #FFFFFF; text-align: center;">
+							<tr
+								style="border: 1px solid #E5E4E4; border-bottom: 1px solid #919191;">
+								<td style="width: 30px; color: #929492"><input
+									type="hidden" style="width: 45px;" /></td>
+								<td
+									style="width: 100px; color: #929492; vertical-align: middle;">이미지</td>
+								<td
+									style="width: 350px; color: #929492; vertical-align: middle;">상품정보</td>
+								<td
+									style="width: 250px; color: #929492; vertical-align: middle;">판매가</td>
+								<td
+									style="width: 100px; color: #929492; vertical-align: middle;">수량</td>
+								<td
+									style="width: 100px; color: #929492; vertical-align: middle;">합계</td>
+								<td style="width: 40px; color: #929492; vertical-align: middle;">
+									선택</td>
+							</tr>
+							<c:if test="${ empty cartList }">
+								<tr>
+									<td colspan="7"><img
+										src="http://localhost/prj_web_shopping/common/images/nocart.png" />
+									</td>
+
+								</tr>
+							</c:if>
+
+
+							<c:forEach var="cart" items="${ cartList }" varStatus="i">
+								<tr style="border-top: 1px solid #E5E4E4;">
+									<td style="vertical-align: middle;"><input type="checkbox"
+										class="check" name="check" value="${ cart.bcode }"
+										style="border: 1px solid #929492; width: 15px;"></td>
+									<td style="vertical-align: middle;"><img
+										src="../upload/goods/${ cart.img }" style="width: 100px" /></td>
+									<td style="vertical-align: middle;"><a
+										href="product_detail.jsp?gcode=${ cart.gcode }"><c:out
+												value="${ cart.gname }" /></a></td>
+									<td style="vertical-align: middle;"><fmt:formatNumber
+											value="${ cart.price }" pattern="#,###,###" /></td>
+									<td style="width: 20px">
+										<!--  수량 --> <span id="amountSet" class="quantity"> <input
+											type="text" id="quantity${ cart.bcode }"
+											name="quantity_opt[]" value="${ cart.amount }" type="text"
+											readonly="readonly" /> <!--   + 버튼 --> <a href="#void"
+											onclick="plus('${ cart.bcode }', ${ cart.price })"
+											class="up QuantityUp">수량증가</a> <!--   - 버튼 --> <a
+											href="#void"
+											onclick="minus('${ cart.bcode }', ${ cart.price })"
+											class="down QuantityDown">수량감소</a>
+									</span>
+									</td>
+									<!-- 총 가격 -->
+									<td style="vertical-align: middle;" id="total${ cart.bcode }">
+										<fmt:formatNumber value="${cart.price * cart.amount}"
+											pattern='#,###,###' />
+									</td>
+									<td>
+										<!-- 삭제 버튼 --> <input type="button" value="x삭제"
+										class="deleteBtn" name="deleteBtn"
+										onclick="deleteCart('${cart.bcode}')"
+										style="width: 90px; height: 35px; background-color: white; border: 1px solid #E5E4E4;" /><br />
+										<input type="hidden" style="width: 90px; height: 30px;" />
+									</td>
+								</tr>
+							</c:forEach>
+						</table>
+						<input type="hidden" name="where" value="cart"> <input
+							type="hidden" id="full" name="full" value="">
+					</form>
 				</div>
-		
-</div>
-</div>
-<%@ include file="layout/footer.jsp"%>
-</div>
+
+			</div>
+			<div class="move">
+
+				<div
+					class="xans-element- xans-order xans-order-totalorder ec-base-button 100per">
+					<a class="btnBlack" id="btnBlack">전체상품주문</a> <a class="btnSubmit"
+						id="btnSubmit">선택상품주문</a>
+				</div>
+
+			</div>
+		</div>
+		<%@ include file="layout/footer.jsp"%>
+	</div>
 </body>
 </html>
