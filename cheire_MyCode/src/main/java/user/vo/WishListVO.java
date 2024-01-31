@@ -1,6 +1,6 @@
 package user.vo;
 
-//사용자 / 관심 상품 VO - 인영
+//사용자 / 관심 상품 VO -  인영
 public class WishListVO {
 
 	private String gcode, img, id, wcode, gname;
