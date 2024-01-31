@@ -1,5 +1,5 @@
 package admin.vo;
-
+//관리자 / 주문관리 VO - 인영
 public class OrderVO {
 
 	private String ord_date,gname,name,dlvy_pro, ord_dno,ordno;

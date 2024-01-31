@@ -1,5 +1,6 @@
 package user.dao;
 
+//사용자 / 장바구니 DAO - 인영
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -28,7 +29,6 @@ public class CartDAO {
 		return bkDAO;
 	}// getInstance
 
-	
 	public List<CartVO> selectAllCartList(String id, BoardRangeVO brVO) throws SQLException {
 		CartVO bkVO = null;
 		List<CartVO> list = new ArrayList<CartVO>();
@@ -64,8 +64,8 @@ public class CartDAO {
 				pstmt.setInt(2, brVO.getStartNum());
 				pstmt.setInt(3, brVO.getEndNum());
 			} // end if
-			// 5. 바인드 변수 값 설정
-			// 6. 쿼리문 실행 후 값 얻기
+				// 5. 바인드 변수 값 설정
+				// 6. 쿼리문 실행 후 값 얻기
 			rs = pstmt.executeQuery();
 			while (rs.next()) {
 				bkVO = new CartVO();
@@ -144,38 +144,37 @@ public class CartDAO {
 		} // end finally
 		return cnt;
 	}// deleteWishList
-	
+
 	public boolean getGcode(String id, String gcode) throws SQLException {
 		boolean resultGcode = false;
-		
-		DbConnection db=DbConnection.getInstance();
-		
-		Connection con=null;
-		PreparedStatement pstmt=null;
-		ResultSet rs=null;
+
+		DbConnection db = DbConnection.getInstance();
+
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
 		try {
-		//1. JNDI 사용 객체 생성
-		//2. DataSource 얻기
-		//3. Connection 얻기
-			con=db.getConn("jdbc/dbcp");
-		//4. 쿼리문 생성 객체 얻기
-			String getGcode="select GCODE FROM BUCKET_LIST WHERE ID = ? and gcode = ?";
-			
-			pstmt=con.prepareStatement(getGcode);
-		//5. 바인드 변수 값 설정
+			// 1. JNDI 사용 객체 생성
+			// 2. DataSource 얻기
+			// 3. Connection 얻기
+			con = db.getConn("jdbc/dbcp");
+			// 4. 쿼리문 생성 객체 얻기
+			String getGcode = "select GCODE FROM BUCKET_LIST WHERE ID = ? and gcode = ?";
+
+			pstmt = con.prepareStatement(getGcode);
+			// 5. 바인드 변수 값 설정
 			pstmt.setString(1, id);
 			pstmt.setString(2, gcode);
-			
-		//6. 쿼리문 실행 후 값 얻기
-			rs=pstmt.executeQuery();
+
+			// 6. 쿼리문 실행 후 값 얻기
+			rs = pstmt.executeQuery();
 
 			resultGcode = rs.next(); // 조회 결과가 있으면 true, 없으면 false
-		}finally {
-			//7. 연결 끊기
+		} finally {
+			// 7. 연결 끊기
 			db.dbClose(rs, pstmt, con);
-		}//end finally
+		} // end finally
 		return resultGcode;
-	}//getGcode
-	
+	}// getGcode
 
 }// class
