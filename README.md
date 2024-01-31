@@ -2,7 +2,7 @@
 
 
 
-![Uploading image.png…]()
+![image](https://github.com/In0code/cherie/assets/137425054/9855cdcd-b79f-4cfa-8e05-7c05c84cb2a8)
 
 
 
