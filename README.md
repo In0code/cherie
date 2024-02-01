@@ -25,7 +25,8 @@
 
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/a44f2138-ebc4-4c54-b3e6-cb53ed35dfcf)
+  ![image](https://github.com/In0code/cherie/assets/137425054/1f3d611e-b29a-417d-8160-a0cac7a7ec1a)
+
 
 
 
@@ -36,7 +37,8 @@
 
 - 로그인 페이지
 
-![image](https://github.com/In0code/cherie/assets/137425054/7d58f93d-681f-4765-9e24-9d50939c1d0f)
+  ![image](https://github.com/In0code/cherie/assets/137425054/2971fcf1-2d1d-45a5-8afe-dd90a9a2ee6f)
+
 
 
 
@@ -47,7 +49,8 @@
 - 상품 목록
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/93d99ae4-edd0-4db5-9462-3f9de6bd224a)
+  ![image](https://github.com/In0code/cherie/assets/137425054/2fbd80b3-dde6-4da1-9e11-72cdc33598c7)
+
 
 
 
@@ -56,7 +59,9 @@
 
 - 상품을 장바구니에 추가 ( 당담 )
 
-![image](https://github.com/In0code/cherie/assets/137425054/a6ad87b9-cf4b-4663-9add-446e274fbc98)
+  ![image](https://github.com/In0code/cherie/assets/137425054/aee67b14-657a-4aef-a399-8f9f1fb9eeff)
+
+  ![image](https://github.com/In0code/cherie/assets/137425054/8b0b3146-5892-4187-9a19-d96c20f4553d)
 
 
 
@@ -65,7 +70,8 @@
 
 - 장바구니 목록 ( 담당 )
 
-![image](https://github.com/In0code/cherie/assets/137425054/30eafbd9-bccc-492b-bc31-2669a2ba8f96)
+  ![image](https://github.com/In0code/cherie/assets/137425054/ca6b94dc-c893-4de4-b4a5-1b8ac77d6f49)
+
 
 
 --------------------------------------------------------------------
@@ -74,7 +80,9 @@
 - 상품을 관심 상품에 추가 ( 담당 )
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/50970cea-0138-4683-b195-cb73d39285b7)
+  ![image](https://github.com/In0code/cherie/assets/137425054/9edfc8c7-3e01-49ee-b795-5740b4c63870)
+
+  ![image](https://github.com/In0code/cherie/assets/137425054/1a73185d-2830-478d-9bbb-ed965d69dceb)
 
 
 
@@ -83,7 +91,8 @@
 
 - 관심 상품 목록  ( 담당 )
 
-![image](https://github.com/In0code/cherie/assets/137425054/b5280e65-e215-473c-ace9-8d0e3cbefb69)
+  ![image](https://github.com/In0code/cherie/assets/137425054/46ee9098-a4a8-4bcf-afca-2eb9c0ed318d)
+
 
 
 --------------------------------------------------------------------
@@ -95,7 +104,8 @@
 - 관리자 로그인
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/6dfa90cb-28aa-4f39-8291-7f0fc9333aaa)
+  ![image](https://github.com/In0code/cherie/assets/137425054/e7573512-af4d-4bc7-8bcb-0740cbb73d6a)
+
 
 
 --------------------------------------------------------------------
@@ -104,7 +114,8 @@
 - 대시보드
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/694001f9-5670-49b3-8120-d47777c46def)
+  ![image](https://github.com/In0code/cherie/assets/137425054/4051499c-ed28-4502-a151-ef1cae276dd7)
+
 
 
 --------------------------------------------------------------------
@@ -114,7 +125,8 @@
 - 주문 리스트 ( 담당 )
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/9323ec1c-fd50-4778-a14e-7c0dfebbf3f3)
+![image](https://github.com/In0code/cherie/assets/137425054/6b6cebb0-f8b6-4e13-b296-ed0ea4cb3d11)
+
 
 
 
@@ -125,7 +137,8 @@
 - 주문 상태 변경 ( 담당 )
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/0a3d1e96-abcb-40cc-aaa8-1c3fd39f46c9)
+![image](https://github.com/In0code/cherie/assets/137425054/cfc4d266-f932-463f-a65f-68e3dbcccdd4)
+
 
 
 
@@ -135,7 +148,8 @@
 - 교환/반품 리스트 ( 담당 )
 
 
-![image](https://github.com/In0code/cherie/assets/137425054/3d84c227-9aba-4a66-bf8a-bdee234d4912)
+![image](https://github.com/In0code/cherie/assets/137425054/609626ca-780e-4990-8260-e673bd88b240)
+
 
 
 
