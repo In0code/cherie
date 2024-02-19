@@ -6,5 +6,4 @@
 ![image](https://github.com/In0code/cherie/assets/137425054/ec677c43-f926-4f77-ace8-5c4e665bea7b)
 ![image](https://github.com/In0code/cherie/assets/137425054/1571a1fc-1e23-48ce-9e98-d2c816c19480)
 ![image](https://github.com/In0code/cherie/assets/137425054/c7a56b79-3f3d-4f88-bdef-c13b5b7ca24a)
-
 ![image](https://github.com/In0code/cherie/assets/137425054/afe3a138-f755-415b-a253-3c0c638ffa10)
